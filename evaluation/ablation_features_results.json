@@ -1,0 +1,204 @@
+{
+  "meta": {
+    "n_films": 50,
+    "model": "qwen2.5:3b",
+    "datenbasis": "robustness/mutations/M0/ (unmutiertes IMDb-HTML, Rang 1-50)",
+    "bootstrap_n": 10000,
+    "description": "Echte Feature-Ablation: full = alle Bausteine aktiv; je Variante wird genau ein Baustein deaktiviert (Genre-Whitelist, Laufzeit-Regex '2h22m'->142, JSON-Modus format=json). delta = F1(full) - F1(ohne), gepaartes 95%-Bootstrap-KI. Cleaner bleibt clean_for_imdb()."
+  },
+  "full": {
+    "n": 50,
+    "f1": {
+      "titel": 0.96,
+      "jahr": 0.76,
+      "bewertung": 1.0,
+      "dauer_minuten": 0.92,
+      "regisseur": 0.96,
+      "genres": 0.98,
+      "GESAMT": 0.93
+    },
+    "ci": {
+      "titel": {
+        "lo": 0.9,
+        "hi": 1.0
+      },
+      "jahr": {
+        "lo": 0.64,
+        "hi": 0.88
+      },
+      "bewertung": {
+        "lo": 1.0,
+        "hi": 1.0
+      },
+      "dauer_minuten": {
+        "lo": 0.84,
+        "hi": 0.98
+      },
+      "regisseur": {
+        "lo": 0.9,
+        "hi": 1.0
+      },
+      "genres": {
+        "lo": 0.94,
+        "hi": 1.0
+      },
+      "GESAMT": {
+        "lo": 0.9,
+        "hi": 0.9567
+      }
+    },
+    "parse_failures": 0
+  },
+  "no_whitelist": {
+    "n": 50,
+    "f1": {
+      "titel": 0.96,
+      "jahr": 0.76,
+      "bewertung": 1.0,
+      "dauer_minuten": 0.92,
+      "regisseur": 0.96,
+      "genres": 0.98,
+      "GESAMT": 0.93
+    },
+    "ci": {
+      "titel": {
+        "lo": 0.9,
+        "hi": 1.0
+      },
+      "jahr": {
+        "lo": 0.64,
+        "hi": 0.88
+      },
+      "bewertung": {
+        "lo": 1.0,
+        "hi": 1.0
+      },
+      "dauer_minuten": {
+        "lo": 0.84,
+        "hi": 0.98
+      },
+      "regisseur": {
+        "lo": 0.9,
+        "hi": 1.0
+      },
+      "genres": {
+        "lo": 0.94,
+        "hi": 1.0
+      },
+      "GESAMT": {
+        "lo": 0.9,
+        "hi": 0.9567
+      }
+    },
+    "parse_failures": 0
+  },
+  "no_regex": {
+    "n": 50,
+    "f1": {
+      "titel": 0.96,
+      "jahr": 0.76,
+      "bewertung": 1.0,
+      "dauer_minuten": 0.92,
+      "regisseur": 0.96,
+      "genres": 0.98,
+      "GESAMT": 0.93
+    },
+    "ci": {
+      "titel": {
+        "lo": 0.9,
+        "hi": 1.0
+      },
+      "jahr": {
+        "lo": 0.64,
+        "hi": 0.88
+      },
+      "bewertung": {
+        "lo": 1.0,
+        "hi": 1.0
+      },
+      "dauer_minuten": {
+        "lo": 0.84,
+        "hi": 0.98
+      },
+      "regisseur": {
+        "lo": 0.9,
+        "hi": 1.0
+      },
+      "genres": {
+        "lo": 0.94,
+        "hi": 1.0
+      },
+      "GESAMT": {
+        "lo": 0.9,
+        "hi": 0.9567
+      }
+    },
+    "parse_failures": 0
+  },
+  "no_jsonmode": {
+    "n": 50,
+    "f1": {
+      "titel": 0.96,
+      "jahr": 0.76,
+      "bewertung": 1.0,
+      "dauer_minuten": 0.92,
+      "regisseur": 0.96,
+      "genres": 0.98,
+      "GESAMT": 0.93
+    },
+    "ci": {
+      "titel": {
+        "lo": 0.9,
+        "hi": 1.0
+      },
+      "jahr": {
+        "lo": 0.64,
+        "hi": 0.88
+      },
+      "bewertung": {
+        "lo": 1.0,
+        "hi": 1.0
+      },
+      "dauer_minuten": {
+        "lo": 0.84,
+        "hi": 0.98
+      },
+      "regisseur": {
+        "lo": 0.9,
+        "hi": 1.0
+      },
+      "genres": {
+        "lo": 0.94,
+        "hi": 1.0
+      },
+      "GESAMT": {
+        "lo": 0.9,
+        "hi": 0.9567
+      }
+    },
+    "parse_failures": 0
+  },
+  "delta": {
+    "no_whitelist": {
+      "f1_full": 0.93,
+      "f1_ohne": 0.93,
+      "delta_full_minus_ohne": 0.0,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0
+    },
+    "no_regex": {
+      "f1_full": 0.93,
+      "f1_ohne": 0.93,
+      "delta_full_minus_ohne": 0.0,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0
+    },
+    "no_jsonmode": {
+      "f1_full": 0.93,
+      "f1_ohne": 0.93,
+      "delta_full_minus_ohne": 0.0,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0
+    }
+  }
+}

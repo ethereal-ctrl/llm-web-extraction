@@ -1,0 +1,16 @@
+# Web Scraping
+playwright>=1.40.0
+beautifulsoup4>=4.12.0
+lxml>=5.0.0
+
+# LLM
+ollama>=0.4.0
+openai>=1.0.0  # nur fuer den Cloud-Vergleich (evaluation/compare_cloud_model.py)
+
+# Database
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.0
+
+# Utilities
+python-dotenv>=1.0.0
+rich>=13.7.0

@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "n_films": 30,
+    "model": "qwen2.5:3b",
+    "domain": "letterboxd.com",
+    "ground_truth_method": "JSON-LD + runtime regex (deterministisch, kein LLM)",
+    "bootstrap_n": 10000
+  },
+  "f1": {
+    "titel": 0.9333,
+    "jahr": 0.9667,
+    "regisseur": 0.9333,
+    "bewertung": 0.7,
+    "dauer_minuten": 0.9667,
+    "genres": 1.0,
+    "GESAMT": 0.9167
+  },
+  "ci": {
+    "titel": {
+      "lo": 0.8333,
+      "hi": 1.0
+    },
+    "jahr": {
+      "lo": 0.9,
+      "hi": 1.0
+    },
+    "regisseur": {
+      "lo": 0.8333,
+      "hi": 1.0
+    },
+    "bewertung": {
+      "lo": 0.5333,
+      "hi": 0.8667
+    },
+    "dauer_minuten": {
+      "lo": 0.9,
+      "hi": 1.0
+    },
+    "genres": {
+      "lo": 1.0,
+      "hi": 1.0
+    },
+    "GESAMT": {
+      "lo": 0.8722,
+      "hi": 0.9556
+    }
+  },
+  "parse_failures": 0,
+  "avg_latency_s": 14.501842808723449,
+  "median_latency_s": 15.071754693984985
+}

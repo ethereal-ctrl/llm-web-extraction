@@ -1,0 +1,42 @@
+{
+  "n": 23,
+  "classes": [
+    "A",
+    "P",
+    "H"
+  ],
+  "counts": {
+    "A1": {
+      "A": 1,
+      "P": 15,
+      "H": 7
+    },
+    "A2": {
+      "A": 5,
+      "P": 15,
+      "H": 3
+    }
+  },
+  "confusion_matrix": {
+    "A": {
+      "A": 1,
+      "P": 0,
+      "H": 0
+    },
+    "P": {
+      "A": 0,
+      "P": 15,
+      "H": 0
+    },
+    "H": {
+      "A": 4,
+      "P": 0,
+      "H": 3
+    }
+  },
+  "p_o": 0.8261,
+  "p_e": 0.4745,
+  "kappa": 0.6691,
+  "interpretation": "substantiell (substantial)",
+  "annotator_2_heuristic": "Regelbasis (siehe Modul-Dokstring)"
+}

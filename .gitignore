@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+venv/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+*.log
+output/
+robustness/snapshots/
+robustness/mutations/
+evaluation/letterboxd_snapshots/
+evaluation/ground_truth*.json
+evaluation/gt_audit_state.json

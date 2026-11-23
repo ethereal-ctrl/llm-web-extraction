@@ -1,0 +1,13 @@
+{
+  "model": "qwen2.5:3b",
+  "n_filme": 50,
+  "schauspieler_precision": 0.9829,
+  "schauspieler_recall": 0.93,
+  "schauspieler_f1": 0.9473,
+  "schauspieler_f1_ci95": [
+    0.9108,
+    0.9772
+  ],
+  "rollen_genauigkeit": 0.9656,
+  "rollen_basis": 465
+}

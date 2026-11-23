@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "n_films": 50,
+    "model": "qwen2.5:3b",
+    "ollama_version": "0.16.2",
+    "bootstrap_n": 10000,
+    "snapshots": "robustness/snapshots",
+    "description": "JSON-Schema-Constraints vs. Fallback-Kaskade"
+  },
+  "fallback": {
+    "n": 50,
+    "parse_failures": 0,
+    "parse_failure_rate": 0.0,
+    "f1": {
+      "titel": 0.96,
+      "jahr": 0.76,
+      "bewertung": 1.0,
+      "dauer_minuten": 0.92,
+      "regisseur": 0.96,
+      "genres": 0.98,
+      "GESAMT": 0.93
+    },
+    "avg_latency_s": 5.756888661384583,
+    "median_latency_s": 5.6506640911102295,
+    "ci": {
+      "titel": {
+        "lo": 0.9,
+        "hi": 1.0
+      },
+      "jahr": {
+        "lo": 0.64,
+        "hi": 0.88
+      },
+      "bewertung": {
+        "lo": 1.0,
+        "hi": 1.0
+      },
+      "dauer_minuten": {
+        "lo": 0.84,
+        "hi": 0.98
+      },
+      "regisseur": {
+        "lo": 0.9,
+        "hi": 1.0
+      },
+      "genres": {
+        "lo": 0.94,
+        "hi": 1.0
+      },
+      "GESAMT": {
+        "lo": 0.9,
+        "hi": 0.9567
+      }
+    }
+  },
+  "schema": {
+    "n": 50,
+    "parse_failures": 0,
+    "parse_failure_rate": 0.0,
+    "f1": {
+      "titel": 0.96,
+      "jahr": 0.76,
+      "bewertung": 1.0,
+      "dauer_minuten": 0.92,
+      "regisseur": 0.9,
+      "genres": 0.98,
+      "GESAMT": 0.92
+    },
+    "avg_latency_s": 5.41791401386261,
+    "median_latency_s": 5.420596122741699,
+    "ci": {
+      "titel": {
+        "lo": 0.9,
+        "hi": 1.0
+      },
+      "jahr": {
+        "lo": 0.64,
+        "hi": 0.88
+      },
+      "bewertung": {
+        "lo": 1.0,
+        "hi": 1.0
+      },
+      "dauer_minuten": {
+        "lo": 0.84,
+        "hi": 0.98
+      },
+      "regisseur": {
+        "lo": 0.8,
+        "hi": 0.98
+      },
+      "genres": {
+        "lo": 0.94,
+        "hi": 1.0
+      },
+      "GESAMT": {
+        "lo": 0.89,
+        "hi": 0.95
+      }
+    }
+  },
+  "delta_schema_minus_fallback": {
+    "titel": {
+      "delta": 0.0,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0
+    },
+    "jahr": {
+      "delta": 0.0,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0
+    },
+    "bewertung": {
+      "delta": 0.0,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0
+    },
+    "dauer_minuten": {
+      "delta": 0.0,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0
+    },
+    "regisseur": {
+      "delta": -0.06,
+      "ci_lo": -0.14,
+      "ci_hi": 0.02
+    },
+    "genres": {
+      "delta": 0.0,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0
+    },
+    "GESAMT": {
+      "delta": -0.01,
+      "ci_lo": -0.0267,
+      "ci_hi": 0.0033
+    }
+  }
+}

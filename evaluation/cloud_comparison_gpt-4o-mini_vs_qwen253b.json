@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "cloud_model": "gpt-4o-mini",
+    "n_films": 50,
+    "datenbasis": "robustness/mutations/M0",
+    "prompt": "FEW_SHOT_PROMPT",
+    "json_mode": "response_format=json_object",
+    "temperature": 0.1,
+    "bootstrap_n": 10000,
+    "seed": 42,
+    "laufzeit_sekunden": 275.7,
+    "sekunden_pro_film": 5.51,
+    "token_usage": {
+      "input_tokens": 54690,
+      "output_tokens": 16643,
+      "calls": 50
+    },
+    "geschaetzte_kosten_usd": 0.0182
+  },
+  "cloud": {
+    "f1": {
+      "titel": 0.96,
+      "jahr": 0.76,
+      "bewertung": 1.0,
+      "dauer_minuten": 0.92,
+      "regisseur": 1.0,
+      "genres": 0.96,
+      "GESAMT": 0.9333
+    },
+    "ci": {
+      "titel": {
+        "lo": 0.9,
+        "hi": 1.0
+      },
+      "jahr": {
+        "lo": 0.64,
+        "hi": 0.88
+      },
+      "bewertung": {
+        "lo": 1.0,
+        "hi": 1.0
+      },
+      "dauer_minuten": {
+        "lo": 0.84,
+        "hi": 0.98
+      },
+      "regisseur": {
+        "lo": 1.0,
+        "hi": 1.0
+      },
+      "genres": {
+        "lo": 0.9,
+        "hi": 1.0
+      },
+      "GESAMT": {
+        "lo": 0.9033,
+        "hi": 0.96
+      }
+    },
+    "parse_failures": 0
+  },
+  "lokal": {
+    "model": "qwen2.5:3b",
+    "quelle": "output/qwen25_250.json",
+    "n_films": 50,
+    "f1": {
+      "titel": 0.96,
+      "jahr": 0.76,
+      "bewertung": 1.0,
+      "dauer_minuten": 0.92,
+      "regisseur": 0.96,
+      "genres": 0.98,
+      "GESAMT": 0.93
+    },
+    "ci": {
+      "titel": {
+        "lo": 0.9,
+        "hi": 1.0
+      },
+      "jahr": {
+        "lo": 0.64,
+        "hi": 0.88
+      },
+      "bewertung": {
+        "lo": 1.0,
+        "hi": 1.0
+      },
+      "dauer_minuten": {
+        "lo": 0.84,
+        "hi": 0.98
+      },
+      "regisseur": {
+        "lo": 0.9,
+        "hi": 1.0
+      },
+      "genres": {
+        "lo": 0.94,
+        "hi": 1.0
+      },
+      "GESAMT": {
+        "lo": 0.9,
+        "hi": 0.9567
+      }
+    }
+  },
+  "vergleich": {
+    "n_films": 50,
+    "delta_gesamt_cloud_minus_lokal": 0.0033,
+    "ci_lo": -0.0067,
+    "ci_hi": 0.0167,
+    "mcnemar": {
+      "b01": 2,
+      "b10": 1,
+      "n_diskordant": 3,
+      "p_value": 1.0
+    },
+    "per_field": {
+      "titel": {
+        "cloud": 0.96,
+        "lokal": 0.96,
+        "delta": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0
+      },
+      "jahr": {
+        "cloud": 0.76,
+        "lokal": 0.76,
+        "delta": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0
+      },
+      "bewertung": {
+        "cloud": 1.0,
+        "lokal": 1.0,
+        "delta": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0
+      },
+      "dauer_minuten": {
+        "cloud": 0.92,
+        "lokal": 0.92,
+        "delta": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0
+      },
+      "regisseur": {
+        "cloud": 1.0,
+        "lokal": 0.96,
+        "delta": 0.04,
+        "ci_lo": 0.0,
+        "ci_hi": 0.1
+      },
+      "genres": {
+        "cloud": 0.96,
+        "lokal": 0.98,
+        "delta": -0.02,
+        "ci_lo": -0.06,
+        "ci_hi": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "model": "gemma3:4b",
+  "n_filme": 50,
+  "schauspieler_precision": 1.0,
+  "schauspieler_recall": 1.0,
+  "schauspieler_f1": 1.0,
+  "schauspieler_f1_ci95": [
+    1.0,
+    1.0
+  ],
+  "rollen_genauigkeit": 1.0,
+  "rollen_basis": 500
+}

@@ -1,0 +1,42 @@
+{
+  "field_stats": {
+    "titel": {
+      "correct": 48,
+      "total": 50,
+      "accuracy": 0.96
+    },
+    "jahr": {
+      "correct": 49,
+      "total": 50,
+      "accuracy": 0.98
+    },
+    "bewertung": {
+      "correct": 50,
+      "total": 50,
+      "accuracy": 1.0
+    },
+    "dauer_minuten": {
+      "correct": 46,
+      "total": 50,
+      "accuracy": 0.92
+    },
+    "regisseur": {
+      "correct": 49,
+      "total": 50,
+      "accuracy": 0.98
+    },
+    "genres": {
+      "correct": 35,
+      "total": 50,
+      "accuracy": 0.7
+    }
+  },
+  "error_type_counts": {
+    "PARSING": 15,
+    "HALLUZINATION": 7,
+    "REGISSEUR_DIFF": 1
+  },
+  "total_errors": 23,
+  "total_fields": 300,
+  "total_correct": 277
+}

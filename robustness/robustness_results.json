@@ -1,0 +1,223 @@
+{
+  "xpath": {
+    "M0": {
+      "n": 20,
+      "f1": {
+        "titel": 0.9,
+        "jahr": 0.85,
+        "bewertung": 1.0,
+        "dauer_minuten": 0.95,
+        "regisseur": 1.0,
+        "genres": 0.95,
+        "GESAMT": 0.9416666666666667
+      },
+      "matches": {
+        "titel": 18,
+        "jahr": 17,
+        "bewertung": 20,
+        "dauer_minuten": 19,
+        "regisseur": 20,
+        "genres": 19
+      }
+    },
+    "M1": {
+      "n": 20,
+      "f1": {
+        "titel": 0.9,
+        "jahr": 0.5,
+        "bewertung": 1.0,
+        "dauer_minuten": 0.6,
+        "regisseur": 1.0,
+        "genres": 0.9,
+        "GESAMT": 0.8166666666666667
+      },
+      "matches": {
+        "titel": 18,
+        "jahr": 10,
+        "bewertung": 20,
+        "dauer_minuten": 12,
+        "regisseur": 20,
+        "genres": 18
+      }
+    },
+    "M2": {
+      "n": 20,
+      "f1": {
+        "titel": 0.8,
+        "jahr": 0.2,
+        "bewertung": 0.95,
+        "dauer_minuten": 0.2,
+        "regisseur": 0.95,
+        "genres": 0.7,
+        "GESAMT": 0.6333333333333333
+      },
+      "matches": {
+        "titel": 16,
+        "jahr": 4,
+        "bewertung": 19,
+        "dauer_minuten": 4,
+        "regisseur": 19,
+        "genres": 14
+      }
+    },
+    "M3": {
+      "n": 20,
+      "f1": {
+        "titel": 0.4,
+        "jahr": 0.0,
+        "bewertung": 0.5,
+        "dauer_minuten": 0.0,
+        "regisseur": 0.7,
+        "genres": 0.0,
+        "GESAMT": 0.26666666666666666
+      },
+      "matches": {
+        "titel": 8,
+        "jahr": 0,
+        "bewertung": 10,
+        "dauer_minuten": 0,
+        "regisseur": 14,
+        "genres": 0
+      }
+    },
+    "M4": {
+      "n": 20,
+      "f1": {
+        "titel": 0.0,
+        "jahr": 0.0,
+        "bewertung": 0.0,
+        "dauer_minuten": 0.0,
+        "regisseur": 0.0,
+        "genres": 0.0,
+        "GESAMT": 0.0
+      },
+      "matches": {
+        "titel": 0,
+        "jahr": 0,
+        "bewertung": 0,
+        "dauer_minuten": 0,
+        "regisseur": 0,
+        "genres": 0
+      }
+    }
+  },
+  "llm": {
+    "M0": {
+      "n": 20,
+      "f1": {
+        "titel": 0.9,
+        "jahr": 0.85,
+        "bewertung": 1.0,
+        "dauer_minuten": 0.95,
+        "regisseur": 1.0,
+        "genres": 0.95,
+        "GESAMT": 0.9416666666666667
+      },
+      "matches": {
+        "titel": 18,
+        "jahr": 17,
+        "bewertung": 20,
+        "dauer_minuten": 19,
+        "regisseur": 20,
+        "genres": 19
+      },
+      "seconds": 112.0
+    },
+    "M1": {
+      "n": 20,
+      "f1": {
+        "titel": 0.9,
+        "jahr": 0.55,
+        "bewertung": 1.0,
+        "dauer_minuten": 0.6,
+        "regisseur": 0.9,
+        "genres": 0.9,
+        "GESAMT": 0.8083333333333333
+      },
+      "matches": {
+        "titel": 18,
+        "jahr": 11,
+        "bewertung": 20,
+        "dauer_minuten": 12,
+        "regisseur": 18,
+        "genres": 18
+      },
+      "seconds": 103.6
+    },
+    "M2": {
+      "n": 20,
+      "f1": {
+        "titel": 0.9,
+        "jahr": 0.35,
+        "bewertung": 0.95,
+        "dauer_minuten": 0.25,
+        "regisseur": 0.9,
+        "genres": 0.8,
+        "GESAMT": 0.6916666666666667
+      },
+      "matches": {
+        "titel": 18,
+        "jahr": 7,
+        "bewertung": 19,
+        "dauer_minuten": 5,
+        "regisseur": 18,
+        "genres": 16
+      },
+      "seconds": 98.5
+    },
+    "M3": {
+      "n": 20,
+      "f1": {
+        "titel": 0.9,
+        "jahr": 0.35,
+        "bewertung": 0.75,
+        "dauer_minuten": 0.05,
+        "regisseur": 0.95,
+        "genres": 0.45,
+        "GESAMT": 0.575
+      },
+      "matches": {
+        "titel": 18,
+        "jahr": 7,
+        "bewertung": 15,
+        "dauer_minuten": 1,
+        "regisseur": 19,
+        "genres": 9
+      },
+      "seconds": 148.7
+    },
+    "M4": {
+      "n": 20,
+      "f1": {
+        "titel": 0.9,
+        "jahr": 1.0,
+        "bewertung": 1.0,
+        "dauer_minuten": 0.35,
+        "regisseur": 1.0,
+        "genres": 0.8,
+        "GESAMT": 0.8416666666666667
+      },
+      "matches": {
+        "titel": 18,
+        "jahr": 20,
+        "bewertung": 20,
+        "dauer_minuten": 7,
+        "regisseur": 20,
+        "genres": 16
+      },
+      "seconds": 264.3
+    }
+  },
+  "meta": {
+    "n_films": 20,
+    "model": "qwen2.5:3b",
+    "levels": [
+      "M0",
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "description": "Robustheit gegen Layout-Mutation"
+  }
+}

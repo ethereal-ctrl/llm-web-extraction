@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "n_films": 50,
+    "model": "qwen2.5:3b",
+    "description": "Ablation: v_full nutzt clean_for_imdb() mit IMDb-bewussten data-testid-Selektoren; v_generic nutzt das rein generische clean() ohne IMDb-spezifische Vorextraktion. Beide Pfade laufen durch dieselbe LLM-Pipeline (qwen2.5:3b, Few-Shot, JSON-Modus, Genre-Whitelist-Postprocessing). Differenz Delta_F1 = F1(v_full) - F1(v_generic) zeigt den Beitrag der IMDb-bewussten Vorextraktion.",
+    "bootstrap_n": 10000
+  },
+  "v_full": {
+    "n": 50,
+    "f1": {
+      "titel": 0.96,
+      "jahr": 0.76,
+      "bewertung": 1.0,
+      "dauer_minuten": 0.92,
+      "regisseur": 0.96,
+      "genres": 0.98,
+      "GESAMT": 0.93
+    },
+    "ci": {
+      "titel": {
+        "lo": 0.9,
+        "hi": 1.0
+      },
+      "jahr": {
+        "lo": 0.64,
+        "hi": 0.88
+      },
+      "bewertung": {
+        "lo": 1.0,
+        "hi": 1.0
+      },
+      "dauer_minuten": {
+        "lo": 0.84,
+        "hi": 0.98
+      },
+      "regisseur": {
+        "lo": 0.9,
+        "hi": 1.0
+      },
+      "genres": {
+        "lo": 0.94,
+        "hi": 1.0
+      },
+      "GESAMT": {
+        "lo": 0.9,
+        "hi": 0.9567
+      }
+    },
+    "parse_failures": 0,
+    "avg_latency_s": 5.233067398071289
+  },
+  "v_generic": {
+    "n": 50,
+    "f1": {
+      "titel": 0.96,
+      "jahr": 0.98,
+      "bewertung": 1.0,
+      "dauer_minuten": 0.36,
+      "regisseur": 1.0,
+      "genres": 0.88,
+      "GESAMT": 0.8633
+    },
+    "ci": {
+      "titel": {
+        "lo": 0.9,
+        "hi": 1.0
+      },
+      "jahr": {
+        "lo": 0.94,
+        "hi": 1.0
+      },
+      "bewertung": {
+        "lo": 1.0,
+        "hi": 1.0
+      },
+      "dauer_minuten": {
+        "lo": 0.24,
+        "hi": 0.5
+      },
+      "regisseur": {
+        "lo": 1.0,
+        "hi": 1.0
+      },
+      "genres": {
+        "lo": 0.78,
+        "hi": 0.96
+      },
+      "GESAMT": {
+        "lo": 0.8233,
+        "hi": 0.9
+      }
+    },
+    "parse_failures": 0,
+    "avg_latency_s": 11.398667044639588
+  },
+  "delta": {
+    "titel": {
+      "delta": 0.0,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0
+    },
+    "jahr": {
+      "delta": -0.22,
+      "ci_lo": -0.34,
+      "ci_hi": -0.12
+    },
+    "bewertung": {
+      "delta": 0.0,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0
+    },
+    "dauer_minuten": {
+      "delta": 0.56,
+      "ci_lo": 0.42,
+      "ci_hi": 0.7
+    },
+    "regisseur": {
+      "delta": -0.04,
+      "ci_lo": -0.1,
+      "ci_hi": 0.0
+    },
+    "genres": {
+      "delta": 0.1,
+      "ci_lo": 0.02,
+      "ci_hi": 0.18
+    },
+    "GESAMT": {
+      "delta": 0.0667,
+      "ci_lo": 0.0233,
+      "ci_hi": 0.11
+    }
+  }
+}
